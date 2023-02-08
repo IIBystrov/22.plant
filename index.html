@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=divice-width, initital-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <title>Plant</title>
 
@@ -49,9 +49,10 @@
             <div class="page__inner inner">
 
                 <header class="page__header header">
+                    
                     <div class="header__logo logo">
-                        <a class="logo__link" href="#">
-                            <img class="logo__img" src="img/picture/logo/logo.webp" alt="Logo">
+                        <a class="logo__link link" href="#">
+                            <img class="logo__img img" src="img/picture/logo/logo.webp" alt="Logo">
                         </a>
                     </div> <!-- /.header__logo logo -->
 
@@ -61,7 +62,7 @@
 
                             <ul class="nav__list">
                                 <li class="nav__item">
-                                    <a class="nav__link" href="#">Home</a>
+                                    <a class="nav__link nav__link--active" href="#">Home</a>
                                 </li> <!-- /.nav__item -->
                                 <li class="nav__item">
                                     <a class="nav__link" href="#">About</a>
@@ -73,7 +74,7 @@
 
                         </nav> <!-- /.header__nav nav -->
 
-                        <button class="header__btn btn" type="button">Order now</button>
+                        <button class="header__btn btn btn--standart btn--inactive" type="button">Order now</button>
 
                     </div> <!-- /.header__container -->
 
@@ -504,82 +505,81 @@
 
             <img class="wrapper__img" src="img/picture/wrapper__img/wrapper__img.webp" alt="">
             
-        </div> <!-- /.page__wrapper wrapper -->
+            <!-- modal windows -->
 
-        
-        <!-- modal windows -->
+            <div class="page__modal modal modal--form">
 
-        <div class="page__modal modal modal--form">
+                <div class="modal__window">
 
-            <div class="modal__window">
+                    <div class="modal__column">
+                        <img class="modal__img" src="img/picture/modal__img/modal__img.webp" alt="">
+                    </div> <!-- /.modal__column -->
 
-                <div class="modal__column">
-                    <img class="modal__img" src="img/picture/modal__img/modal__img.webp" alt="">
-                </div> <!-- /.modal__column -->
+                    <div class="modal__column">
 
-                <div class="modal__column">
+                        <div class="modal__header">
+                            <h2 class="modal__title title--min">Form</h2>
 
-                    <div class="modal__header">
-                        <h2 class="modal__title title--min">Form</h2>
+                            <div class="modal__description">
+                                <p class="modal__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, architecto repudiandae quaerat amet fuga necessitatibus sed fugiat optio.</p>
+                            </div> <!-- /.modal__description -->
+
+                        </div> <!-- /.modal__header -->
+
+                        <form class="modal__form form" action="#" method="post" enctype="text/plain">
+
+                            <div class="form__label">
+                                <h4 class="form__title title--form">Your name</h4>
+                                <input class="form__input" type="text" name="name" required>
+                            </div> <!-- /.form__label -->
+
+                            <div class="form__label">
+                                <h4 class="form__title title--form">Your surname</h4>
+                                <input class="form__input" type="text" name="surname">
+                            </div> <!-- /.form__label -->
+
+                            <div class="form__label">
+                                <h4 class="form__title title--form">Your phone</h4>
+                                <input class="form__input" type="tel" name="telephone" required>
+                            </div> <!-- /.form__label -->
+
+                            <div class="form__label">
+                                <h4 class="form__title title--form">Your e-mail</h4>
+                                <input class="form__input" type="email" name="e-mail">
+                            </div> <!-- /.form__label -->
+
+                            <input class="form__btn btn" type="submit" value="Submit">
+
+                        </form> <!-- /.modal__form form -->
+
+                    </div> <!-- /.modal__column -->
+
+                    <button class="modal__btn btn btn--close" type="button"></button>
+
+                </div> <!-- /.modal__window -->
+
+
+                <div class="page__modal modal modal--cookie">
+
+                    <div class="modal__column">
 
                         <div class="modal__description">
-                            <p class="modal__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, architecto repudiandae quaerat amet fuga necessitatibus sed fugiat optio.</p>
+                            <p class="modal__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                         </div> <!-- /.modal__description -->
 
-                    </div> <!-- /.modal__header -->
+                    </div> <!-- /.modal__column -->
 
-                    <form class="modal__form form" action="#" method="post" enctype="text/plain">
+                    <div class="modal__column">
+                        <button class="btn btn-cookie" type="button">Accept</button>
+                    </div> <!-- /.modal__column -->
 
-                        <div class="form__label">
-                            <h4 class="form__title title--form">Your name</h4>
-                            <input class="form__input" type="text" name="name" required>
-                        </div> <!-- /.form__label -->
+                    <button class="modal__btn btn btn-close" type="button"></button>
 
-                        <div class="form__label">
-                            <h4 class="form__title title--form">Your surname</h4>
-                            <input class="form__input" type="text" name="surname">
-                        </div> <!-- /.form__label -->
+                </div> <!-- /.page__modal modal modal_cookie -->
 
-                        <div class="form__label">
-                            <h4 class="form__title title--form">Your phone</h4>
-                            <input class="form__input" type="tel" name="telephone" required>
-                        </div> <!-- /.form__label -->
+            </div> <!-- /.page__modal modal modal_form -->
 
-                        <div class="form__label">
-                            <h4 class="form__title title--form">Your e-mail</h4>
-                            <input class="form__input" type="email" name="e-mail">
-                        </div> <!-- /.form__label -->
-
-                        <input class="form__btn btn" type="submit" value="Submit">
-
-                    </form> <!-- /.modal__form form -->
-
-                </div> <!-- /.modal__column -->
-
-                <button class="modal__btn btn btn--close" type="button"></button>
-
-            </div> <!-- /.modal__window -->
-
-
-            <div class="page__modal modal modal--cookie">
-
-                <div class="modal__column">
-
-                    <div class="modal__description">
-                        <p class="modal__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div> <!-- /.modal__description -->
-
-                </div> <!-- /.modal__column -->
-
-                <div class="modal__column">
-                    <button class="btn btn-cookie" type="button">Accept</button>
-                </div> <!-- /.modal__column -->
-
-                <button class="modal__btn btn btn-close" type="button"></button>
-
-            </div> <!-- /.page__modal modal modal_cookie -->
-
-        </div> <!-- /.page__modal modal modal_form -->
+        </div> <!-- /.page__wrapper wrapper -->
 
     </body> <!-- /.document__page page  -->
 
