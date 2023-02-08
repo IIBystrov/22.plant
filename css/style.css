@@ -1,0 +1,99 @@
+/* fonts */
+
+/* raleway */
+/* regular */
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway regular"),
+        url("../font/raleway/regular/raleway_regular.eot"),
+        url("../font/raleway/regular/raleway_regular.eot?#iefix") format("embedded-opentype"),
+        url("../font/raleway/regular/raleway_regular.woff2") format("woff2"),
+        url("../font/raleway/regular/raleway_regular.woff") format("woff"),
+        url("../font/raleway/regular/raleway_regular.ttf") format("truetype"),
+        url("../font/raleway/regular/raleway_regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* medium */
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Relaway medium"),
+        url("../font/raleway/medium/raleway_medium.eot"),
+        url("../font/raleway/medium/raleway_medium.eot?#iefix") format("embedded-opentype"),
+        url("../font/raleway/medium/raleway_medium.woff2") format("woff2"),
+        url("../font/raleway/medium/raleway_medium.woff") format("woff"),
+        url("../font/raleway/medium/raleway_medium.ttf") format("truetype"),
+        url("../font/raleway/medium/raleway_medium.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* semibold */
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway semibold"),
+        url("../font/raleway/semibold/raleway_semibold.eot"),
+        url("../font/raleway/semibold/raleway_semibold.eot?#iefix") format("embedded-opentype"),
+        url("../font/raleway/semibold/raleway_semibold.woff2") format("woff2"),
+        url("../font/raleway/semibold/raleway_semibold.woff") format("woff"),
+        url("../font/raleway/semibold/raleway_semibold.ttf") format("truetype"),
+        url("../font/raleway/semibold/raleway_semibold.svg") format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* bold */
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway bold"),
+        url("../font/raleway/bold/raleway_bold.eot"),
+        url("../font/raleway/bold/raleway_bold.eot?#iefix") format("embedded-opentype"),
+        url("../font/raleway/bold/raleway_bold.woff2") format("woff2"),
+        url("../font/raleway/bold/raleway_bold.woff") format("woff"),
+        url("../font/raleway/bold/raleway_bold.ttf") format("truetype"),
+        url("../font/raleway/bold/raleway_bold.svg") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* extrabold */
+
+@font-face {
+    font-family: "Raleway";
+    src: local("Raleway extrabold"),
+        url("../font/raleway/extrabold/raleway_extrabold.eot"),
+        url("../font/raleway/extrabold/raleway_extrabold.eot?#iefix") format("embedded-opentype"),
+        url("../font/raleway/extrabold/raleway_extrabold.woff2") format("woff2"),
+        url("../font/raleway/extrabold/raleway_extrabold.woff") format("woff"),
+        url("../font/raleway/extrabold/raleway_extrabold.ttf") format("truetype"),
+        url("../font/raleway/extrabold/raleway_extrabold.svg") format("svg");
+    font-weight:800;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* variables */
+
+:root {
+    --default-color-text: #081800;
+    --primary-color-text: #ffffff;
+    --soft-color-text: #101c02;
+    --accent-text-color: #418a1c;
+
+    --default-bg-color:#081800;
+    --primary-bg-color: #ffffff;
+    --soft-bg-color: #f7ffec;
+    --accent-bg-color: #418a1c;
+
+    --accent-shadow-color: #51c815;
+}
