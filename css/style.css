@@ -421,11 +421,32 @@
 }
 
 .title--card {
-    font-size: 
+    font-size: 1.77em;
     font-weight: 600;
+    line-height: 1.6;
 }
+
 .intro__title {
     width: 100%;
+}
+
+.card__title {
+    margin: 0 0 15px;
+}
+
+.card__description *:not(:last-child) {
+    margin: 0 0 10px;
+}
+
+.card__text {
+    margin: 0 0 20px;
+
+    opacity: 0.6;
+}
+
+.card__price {
+    font-size: 1.33em;
+    color: var(--accent-text-color);
 }
 
 .title__accent-text {
@@ -633,6 +654,13 @@
 
 /* .market */
 
+.market__item {
+    margin: 0 0 24px;
+}
+
+.market__item:nth-child(2) {
+    margin: 0 0 40px;
+}
 
 /* .card */
 
@@ -662,6 +690,14 @@
     height: 100%;
 
     object-fit: contain;
+}
+
+.section__column--desc {
+    flex: 0 0 528px;
+}
+
+.section__column--desc .market__card {
+    margin: 0 0 38px;
 }
 
 /* .footer */
