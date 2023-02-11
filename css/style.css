@@ -426,6 +426,15 @@
     line-height: 1.6;
 }
 
+.title--footer {
+    line-height: 1.6;
+    text-transform: uppercase;
+}
+
+.footer__title {
+    margin: 0 0 15px;
+}
+
 .intro__title {
     width: 100%;
 }
@@ -674,6 +683,7 @@
 
 .market__card {
     padding: 29px 45px 25px 34px;
+
     background: var(--soft-bg-color);
 }
 
@@ -704,11 +714,51 @@
 
 .footer {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.page__footer {
+    padding: 109px 258px 99px;
 }
 
 .footer__logo {
     flex: 0 0 160px;
     min-height: 132px;
+}
+
+.footer__item {
+    margin: 0 0 15px;
+}
+
+.footer__link {
+    font-size: 500;
+    line-height: 1.6;
+    text-transform: uppercase;
+
+    opacity: 0.6;
+}
+
+.social__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.social__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    flex: 0 0 37px;
+    height: 37px;
+
+    border-radius: 50%;
+    background: var(--default-bg-color);
 }
 
 /* .wrapper__img */
