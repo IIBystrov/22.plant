@@ -974,6 +974,12 @@
 /* modal window */
 
 .page__modal {
+    display: none;
+
+    opacity: 0;
+}
+
+.modal--form {
     position: absolute;
     left: 0;
     top: 0;
@@ -981,13 +987,14 @@
     bottom: 0;
     z-index: 100;
 
-    /* display: none; */
+    display: block;
 
     width: 100%;
     height: 100%;
 
     background: var(--opacity-bg-color);
-    /* opacity: 0; */
+
+    opacity: 1;
 }
 
 .modal__window {
