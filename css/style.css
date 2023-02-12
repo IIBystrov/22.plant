@@ -99,6 +99,7 @@
     --default-bg-color:#081800;
     --primary-bg-color: #ffffff;
     --soft-bg-color: #f7ffec;
+    --opacity-bg-color: rgba(247, 255, 236, 0.7);
     --accent-bg-color: #418a1c;
 
     --accent-shadow-color: #51c815;
@@ -277,6 +278,8 @@
     display: inline-block;
 
     white-space: nowrap;
+
+    cursor: pointer;
 }
 
 .btn--standart {
@@ -395,6 +398,58 @@
 .btn__icon {
     width: 27;
     height: 32; 
+}
+
+.btn--close {
+    position: absolute;
+    top: -24px;
+    right: -29px;
+
+    width: 50px;
+    height: 50px;
+
+    background: inherit;
+    border-radius: 50%;
+    border: 2px solid var(--default-bg-color);
+
+    transition: border-color 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+
+.btn--close:hover {
+    border-color: var(--accent-bg-color);
+    box-shadow: 0 0 15px var(--accent-shadow-color);
+}
+
+.btn__line {
+    display: block;
+
+    width: 90%;
+    height: 3px;
+
+    margin: 0 auto;
+
+    background: var(--default-bg-color);
+    border-radius: 10px;
+
+    transition: background-color 0.3s ease-in;
+}
+
+.btn__line--top {
+    transform-origin: 50% bottom;
+    transform: translate(0, 5px) rotate(45deg);
+}
+
+.btn__line--bottom {
+    transform-origin: 50% top;
+    transform: translate(0, -2px) rotate(-45deg);
+}
+
+.btn__line:not(:last-child) {
+    margin: 0 auto 5px;
+}
+
+.btn--close:hover .btn__line {
+    background: var(--accent-bg-color);
 }
 
 .intro__btn {
@@ -919,6 +974,128 @@
 /* modal window */
 
 .page__modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+
+    /* display: none; */
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--opacity-bg-color);
+    /* opacity: 0; */
+}
+
+.modal__window {
+    position: absolute;
+    left: 50%;
+    top: 30vh;
+
+    transform: translate(-50%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+    
+    width: 100%;
+    max-width: 1080px;
+    padding: 6%;
+    background: var(--soft-bg-color);
+    box-shadow: 9px 9px 0 var(--accent-bg-color);
+}
+
+.modal__column {
+    flex: 0 0 50%;
+}
+
+.modal__header {
+    margin: 0 0 30px;
+}
+
+.modal__title {
+    margin: 0 0 15px;
+    
+    color: var(--accent-text-color);
+}
+
+.modal__text {
+    opacity: 0.6;
+
+    line-height: 1.6;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+    margin: 0 0 20px;
+}
+
+.form__label {
+    position: relative;
+    
+    margin: 0 0 15px;
+}
+
+.form__title {
+    position: absolute;
+    left: 0.5em;
+    top: 50%;
+    z-index: -1;
+
+    display: inline-block;
+
+    padding: 0.1em;
+
+    background: var(--soft-bg-color);
+    border-radius: 5px;
+
+    transform: translate(0, -50%);
+
+    transition: transform 0.3s ease-in, z-index 0.3s ease-in, color 0.3s ease-in, 
+    text-shadow 0.3s ease-in; 
+}
+
+.form__input {
+   padding: 0.5em; 
+
+   background: inherit;
+
+   font-family: var(--default-family-text);
+   font-size: 0.8em;
+   font-weight: var(--default-weight-text);
+   line-height: var(--default-lineheight);
+}
+
+.form__input:hover + .form__title {
+    text-shadow: 0 0 0.9em var(--accent-text-color);
+}
+
+.form__input:focus-visible + .form__title {
+    z-index: 1;
+    
+    transform: translate(0, -130%);
+
+    text-shadow: 0 0 0.9em var(--accent-text-color);
+
+    color: var(--accent-text-color);
+}
+
+.form__btn {
+    font-family: "Raleway"
+}
+
+.modal--cookie {
     display: none;
 }
 
