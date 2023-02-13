@@ -977,6 +977,8 @@
     display: none;
 
     opacity: 0;
+
+    transition: opacity 0.3s ease-in;
 }
 
 .modal--form {
@@ -1105,6 +1107,17 @@
 .modal--cookie {
     display: none;
 }
+
+
+/* media */
+
+@media screen and (max-width: 1020px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (msx-width: 480px) {}
 
 
 /* animation */
