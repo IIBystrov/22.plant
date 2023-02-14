@@ -1110,8 +1110,19 @@
 
 
 /* media */
+@media screen and (max-width: 1200px) {
+    .document {
+        font-size: calc((var(--regular-size-text))*0.9);
+    }
 
-@media screen and (max-width: 1020px) {}
+    .intro__header {
+        left: -10%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    
+}
 
 @media screen and (max-width: 1024px) {}
 
