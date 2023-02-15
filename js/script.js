@@ -3,6 +3,8 @@
 
 //variables
 
+const menuBtn = document.querySelector(".header__menu");
+const headerContainer = document.querySelector(".header__container");
 const orderBtn = document.querySelectorAll(".btn--action");
 const closeBtn = document.querySelector(".btn--close");
 const modal = document.querySelector(".page__modal");
@@ -17,6 +19,8 @@ orderBtn.forEach(btn => {
 
 closeBtn.addEventListener("click", modalFormClose);
 
+menuBtn.addEventListener("click", menuToggle);
+
 
 //function
 
@@ -25,5 +29,10 @@ function modalFormOpen() {
 };
 
 function modalFormClose() {
-    modalForm.classList.remove("modal--form")
+    modalForm.classList.remove("modal--form");
+}
+
+function menuToggle() {
+    menuBtn.classList.toggle("menu--open");
+    headerContainer.classList.toggle("header__container--active");
 }
